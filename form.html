@@ -1,0 +1,66 @@
+<html>
+    <script src="C:\Users\saideep\Desktop\om shinde\angular.min.js"></script>
+<body>
+    <div ng-app="">
+        <form name="form"> 
+         <h1>
+         <center>car registration form </center>
+         
+        </h1><table>
+        Enter your name <input type="text" ng-model="size" name="size" ng-required="true"/>
+        <span ng-show="form.size.$error.required"></span>
+        <br><br>
+        Enter your mobile number <input type="text" ng-model="size" name="size" ng-required="true"/>
+        <span ng-show="form.size.$error.required"></span>
+        <br><br>
+        Enter your e-mail id <input type="email" ng-model="size" name="size" ng-required="true"/>
+        <span ng-show="form.size.$error.required"></span>
+        <br><br>
+        gender <input type="checkbox" ng-model="myvar">male 
+        <input type="checkbox" ng-model="myvar">female
+        <br> <br>
+        select the country
+        <input type ="radio" ng-model="myvar" value="india">india
+        <input type ="radio" ng-model="myvar" value="USA">USA
+        <input type ="radio" ng-model="myvar" value="japan">japan
+        <input type ="radio" ng-model="myvar" value="france">france
+        <input type ="radio" ng-model="myvar" value="russia">russia
+        <br><br>
+        select a city:
+        <select ng-model="myvar1">
+            <option value="pune">pune
+                <option value="mumbai">mumbai
+                    <option value="new york">new york
+                        <option value="washington">washington
+                            <option value="tokyo">tokyo
+                                <option value="nara">nara
+                                    <option value="paris">paris
+                                        <option value="moscow">moscow
+            </option>
+        </select>  
+        <br><br>
+        select a car:
+        <select ng-model="myvar1">
+            <option value="MERCEDES">MERCEDES
+                <option value="MG ZS EV">MG ZS EV
+                    <option value="FORD FOCUS ">FORD FOCUS
+                        <option value="AUDI">AUDI
+                            <option value="CITROEN C3">CITROEN C3
+                                <option value="HONDA CIVIC">HONDA CIVIC
+                                    <option value="KIA SORENTO">KIA SORENTO
+                </option>                        
+         </select> 
+         <br></br> 
+         enter detailed Address<textarea ng-model="address"></textarea>
+         <br><br>
+         Enter pincode<input type="text" ng-model="size" name="size" ng-required="true"/>
+        <span ng-show="form.size.$error.required"></span>
+        <br><br>
+        <input type="submit" value="submit">
+        <button type="button" class="cancel">cancel</button>
+        
+</table>
+        </form>
+    </div>
+</body>
+</html>
